@@ -1,3 +1,10 @@
+/* learnings:
+    to make gradient font color
+    for setting gredient color of text 
+    background: linear-gradient(47deg,rgba(0, 255, 201, 1) 0%,rgba(176, 201, 22, 1) 50%,rgba(1, 238, 4, 1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+*/
 * {
   margin: 0;
   padding: 0;
@@ -26,8 +33,27 @@ nav {
 
 .part1 {
   font-size: 2.6rem;
-  color: #fba400;
   font-weight: bold;
+  /* for setting gredient color of text */
+
+  background: linear-gradient(
+    47deg,
+    rgba(0, 255, 201, 1) 0%,
+    rgba(176, 201, 22, 1) 50%,
+    rgba(1, 238, 4, 1) 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.part1:hover {
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .part2 ul {
@@ -79,12 +105,24 @@ section .aboutPart button {
   border-radius: 30px;
   font-size: 1.3rem;
   background-color: #007452;
+  background: linear-gradient(
+    47deg,
+    rgba(7, 131, 95, 1) 0%,
+    rgba(0, 247, 116, 1) 50%,
+    rgba(182, 223, 210, 1) 100%
+  );
   font-weight: bold;
-  color: #daffd5;
+  color: #1c221b;
 }
 section .aboutPart button:hover {
   cursor: pointer;
-  background-color: #003425;
+  background: linear-gradient(
+    47deg,
+    rgba(7, 131, 95, 0.5326505602240896) 0%,
+    rgba(0, 247, 116, 0.577468487394958) 50%,
+    rgba(182, 223, 210, 0.5466561624649859) 100%
+  );
+  color: black;
 }
 section .aboutPart button i {
   color: black;
@@ -125,25 +163,23 @@ footer .icons {
   gap: 15px;
 }
 
-footer{
+footer {
   display: flex;
   justify-content: space-between;
   width: 93%;
 }
 
-.footer2{
+.footer2 {
   display: flex;
 }
-.footer2 .details{
+.footer2 .details {
   color: black;
-
 }
 
-.footer2 i{
+.footer2 i {
   font-size: 50px;
 }
 
 .footer2:hover .details {
   color: white;
-  
 }
