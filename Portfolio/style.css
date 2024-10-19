@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* background: black; */
+  background-image: url(./bg.jpg);
+  background-position: top;
+  background-size: cover;
+  /* margin: 1vw 5vw; */
+  color: wheat;
+  font-family: "Poppins", sans-serif;
+  overflow-y: hidden;
+}
+
+nav {
+  background-color: rgb(18 21 23);
+  background-image: url(./bg.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  padding: 1.1vw 5vw;
+  height: 1.8vw;
+}
+
+.part1 {
+  font-size: 2.6rem;
+  color: #fba400;
+  font-weight: bold;
+}
+
+.part2 ul {
+  display: flex;
+  gap: 2vw;
+}
+
+.part2 ul a {
+  color: wheat;
+  text-decoration: none;
+}
+.part2 ul a:hover {
+  color: rgb(176 177 255);
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 10vw 5vw;
+  height: 80vh;
+}
+
+section .aboutPart {
+  font-size: 2.5rem;
+}
+
+section .aboutPart h1 span {
+  color: #fff138;
+  text-decoration: underline;
+}
+section .aboutPart h1 span:hover {
+  color: rgb(250, 255, 0);
+  /* font-size:4rem ; */
+}
+
+section .aboutPart p span {
+  color: #3fff00;
+  font-weight: 600;
+}
+section .aboutPart p span:hover {
+  color: #40ff00a6;
+  font-weight: 600;
+}
+
+section .aboutPart button {
+  padding: 15px 51px;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  background-color: #007452;
+  font-weight: bold;
+  color: #daffd5;
+}
+section .aboutPart button:hover {
+  cursor: pointer;
+  background-color: #003425;
+}
+section .aboutPart button i {
+  color: black;
+}
+
+section .photoPart {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 200px;
+  width: 193px;
+  margin-right: 100px;
+  margin-right: 65px;
+  border: 3px solid #007452;
+}
+
+section .photoPart:hover {
+  border: 4px solid red;
+}
+
+footer {
+  position: absolute;
+  bottom: 37px;
+  left: 75px;
+}
+
+footer .icons i {
+  font-size: 36px;
+  color: white;
+  text-decoration: none;
+}
+
+footer .icons i:hover {
+  color: rgb(77, 71, 71);
+}
+
+footer .icons {
+  display: flex;
+  gap: 15px;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  width: 93%;
+}
+
+.footer2{
+  display: flex;
+}
+.footer2 .details{
+  color: black;
+
+}
+
+.footer2 i{
+  font-size: 50px;
+}
+
+.footer2:hover .details {
+  color: white;
+  
+}
