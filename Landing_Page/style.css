@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Roboto", serif;
+  background-color: #ffebcd;
+}
+
+nav {
+  background-color: #1a1a40;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 4vw;
+}
+
+nav .logo h1 {
+  font-weight: 900;
+  font-size: 2.4rem;
+  color: #ffebcd;
+  
+}
+
+nav .nav2 {
+  display: flex;
+  gap: 1.2vw;
+  align-items: center;
+}
+
+nav .nav2 a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav .nav2 a:hover {
+  color: #f2f2f275;
+}
+nav .nav2 a button {
+  padding: 0.6vw 1.8vw;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 40px;
+  color: black;
+  border: 2px solid white;
+  background-color: #ffebcd;
+}
+nav .nav2 a button:hover {
+  background-color: #222d46;
+  color: white;
+}
+nav .nav2 i {
+  display: none;
+}
+.section1 {
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw 4vw;
+  height: calc(100% - 70px);
+}
+
+.section1 .hero {
+  background-color: #ffebcd;
+  width: 50%;
+  padding: 5vw 0vw;
+}
+.section1 .hero h1 {
+  font-size: 4.5rem;
+  font-weight: 900;
+}
+.section1 .hero h1 span {
+  font-size: 4.6rem;
+  color: #6d0209;
+  text-decoration: line-through;
+}
+.section1 .hero h1 span::selection{
+  background-color: green;
+  color: white;
+}
+.section1 .hero h1 span#reality {
+  font-size: 4.6rem;
+  color: #222d46;
+  text-decoration: underline;
+}
+.section1 .hero p {
+  font-size: 1.2rem;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+.section1 .hero button {
+  padding: 1.2vw 3vw;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 40px;
+  color: black;
+  background-color: transparent;
+}
+.section1 .hero button:hover {
+  background-color: #222d46;
+  color: white;
+}
+.section1 .image {
+  background-color: blanchedalmond;
+  width: 50%;
+}
+.section1 .image img {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.section2 > h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10vw;
+  width: 100%;
+  padding: 3vw 4vw;
+}
+.serviceCard {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 0.4vw 0.5vw;
+}
+.serviceCard:hover {
+  background-color: #d2b0b54f;
+  color: #000000;
+}
+.section3 {
+  margin: 5vw 0vw;
+}
+.section3 > h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10vw;
+  width: 100%;
+  padding: 3vw 4vw;
+}
+
+.testimonials h2 {
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.testimonialCard {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 0.4vw 0.5vw;
+}
+.testimonialCard:hover {
+  background-color: #d2b0b54f;
+  color: #000000;
+}
+
+/* Footer Section */
+footer {
+  /* margin: auto 4vw; */
+  padding: 2vw 0vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  /* height: auto; */
+  align-items: center;
+  background-color: #1a1a40;
+  color: #f2f2f2;
+}
+footer h2 {
+  color: #f2f2f2;
+}
+footer button {
+  padding: 1.2vw 3vw;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 40px;
+  color: black;
+  border: 2px solid white;
+  background-color: #ffebcd;
+}
+footer button:hover {
+  background-color: #222d46;
+  color: white;
+}
+
+footer .icons i {
+  font-size: 36px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer .icons i:hover {
+  color: rgb(77, 71, 71);
+}
+
+footer .icons {
+  display: flex;
+  gap: 0.5vw;
+}
+
+/* ___________________________________________________________________________ */
+
+/* //tablet */
+@media screen and (min-width: 641px) and (max-width: 770px) {
+  html {
+    font-size: 14px;
+  }
+  body {
+    /* background-color: blue; */
+  }
+  .section1 .hero h1 {
+    font-size: 3rem;
+  }
+  .section1 .hero p {
+    font-size: 1rem;
+    margin-top: 3vw;
+    margin-bottom: 6vw;
+  }
+  .section1 .hero button {
+    padding: 1.2vw 3vw;
+    font-size: 1.9rem;
+    font-weight: bold;
+    border-radius: 40px;
+  }
+  .section1 .image {
+    background-color: blanchedalmond;
+    width: 40%;
+    padding-top: 9vw;
+  }
+  .section1 .image img {
+    width: 100%;
+    /* height: 70%; */
+    object-fit: cover;
+    overflow: hidden;
+  }
+}
+
+/* ______________________________________________________________________ */
+
+/* //mobile */
+@media screen and (max-width: 640px) {
+  body {
+    /* background-color: red; */
+  }
+
+  nav .nav2 a {
+    display: none;
+  }
+  nav .nav2 i {
+    display: inline;
+    font-size: 2.2rem;
+    margin-right: 0.4rem;
+    color: white;
+  }
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw 4vw;
+    height: calc(100% - 70px);
+  }
+  .section1 .hero {
+    background-color: #ffebcd;
+    width: 100%;
+    padding: 5vw 0vw;
+  }
+  .section1 .hero h1 {
+    font-size: 2.4rem;
+  }
+  .section1 .hero p {
+    font-size: 1.3rem;
+    margin-top: 3vw;
+    margin-bottom: 7vw;
+  }
+  .section1 .hero button {
+    padding: 2vw 5vw;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 40px;
+  }
+  .section1 .image {
+    /* background-color: blanchedalmond; */
+    width: 90%;
+    margin-top: 10vw;
+  }
+  .section1 .image img {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .section2 > h1 {
+    text-align: left;
+    margin-left: 4vw;
+  }
+  .section3 > h1 {
+    text-align: left;
+    margin-left: 4vw;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    width: 90%;
+    padding: 3vw 0vw;
+    margin: 4vw;
+  }
+  .serviceCard {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+  }
+
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    width: 90%;
+    padding: 3vw 0vw;
+    margin: 4vw;
+  }
+  .testimonialCard {
+    width: 75%;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+  }
+}
