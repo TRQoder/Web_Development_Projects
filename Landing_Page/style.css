@@ -11,6 +11,14 @@ body {
   width: 100vw;
   font-family: "Roboto", serif;
   background-color: #ffebcd;
+  overflow-x: hidden;
+  padding-top: 60px;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 nav {
@@ -26,7 +34,6 @@ nav .logo h1 {
   font-weight: 900;
   font-size: 2.4rem;
   color: #ffebcd;
-  
 }
 
 nav .nav2 {
@@ -53,10 +60,11 @@ nav .nav2 a button {
   background-color: #ffebcd;
 }
 nav .nav2 a button:hover {
+  cursor: pointer;
   background-color: #222d46;
   color: white;
 }
-nav .nav2 i {
+nav  i {
   display: none;
 }
 .section1 {
@@ -81,9 +89,13 @@ nav .nav2 i {
   color: #6d0209;
   text-decoration: line-through;
 }
-.section1 .hero h1 span::selection{
-  background-color: green;
-  color: white;
+.section1 .hero h1 span::selection {
+  background-color: #6D0209;
+  color: black;
+}
+#reality::selection {
+  background-color: #222D46;
+  color: black;
 }
 .section1 .hero h1 span#reality {
   font-size: 4.6rem;
@@ -104,6 +116,7 @@ nav .nav2 i {
   background-color: transparent;
 }
 .section1 .hero button:hover {
+  cursor: pointer;
   background-color: #222d46;
   color: white;
 }
@@ -135,12 +148,12 @@ nav .nav2 i {
   display: flex;
   flex-direction: column;
   gap: 1vw;
-  background-color: #f2f2f2;
+  background-color: #d2b0b54f;
   border-radius: 10px;
   padding: 0.4vw 0.5vw;
 }
 .serviceCard:hover {
-  background-color: #d2b0b54f;
+  background-color: #d2b0b5b4;
   color: #000000;
 }
 .section3 {
@@ -171,12 +184,12 @@ nav .nav2 i {
   display: flex;
   flex-direction: column;
   gap: 1vw;
-  background-color: #f2f2f2;
+  background-color: #d2b0b54f;
   border-radius: 10px;
   padding: 0.4vw 0.5vw;
 }
 .testimonialCard:hover {
-  background-color: #d2b0b54f;
+  background-color: #d2b0b5b4;
   color: #000000;
 }
 
@@ -205,6 +218,7 @@ footer button {
   background-color: #ffebcd;
 }
 footer button:hover {
+  cursor: pointer;
   background-color: #222d46;
   color: white;
 }
@@ -267,12 +281,69 @@ footer .icons {
 @media screen and (max-width: 640px) {
   body {
     /* background-color: red; */
+    overflow-x: hidden;
+    
+  }
+  nav .nav2 {
+    
+    background-color: #1A1A40;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+    padding-top: 10vw;
+    gap: 7vw;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    transform: translateX(100%);
+    
   }
 
-  nav .nav2 a {
-    display: none;
+  .navIcons{
+    display: flex;
+    gap: 0.5vw;
   }
+  .navIcons i:hover {
+    color: rgb(77, 71, 71);
+  }
+
+ #open:hover{
+  cursor: pointer;
+  color: gray;
+ }
+  #close{ 
+    font-size: 3rem;
+    position: absolute;
+    top: 1.5vw;
+    right: 3vw;
+  }
+  #close:hover{
+    color: gray;
+    cursor: pointer;
+  }
+
+
+
+  nav .nav2 a {
+    display: flex;
+    font-size: 2rem;
+  }
+  nav .nav2 a button {
+    font-size: 2rem;
+  }
+  nav .nav2 a button:hover{
+    background-color: #1A1A40;
+  }
+
   nav .nav2 i {
+    display: inline;
+    margin-right: 0.4rem;
+    color: rgb(255, 255, 255);
+  }
+  nav  i {
     display: inline;
     font-size: 2.2rem;
     margin-right: 0.4rem;
