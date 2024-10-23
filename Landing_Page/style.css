@@ -65,15 +65,18 @@ nav .nav2 a button:hover {
   background-color: #222d46;
   color: white;
 }
-nav  i {
+nav  i{
   display: none;
+}
+.nav2>a i{
+  display: inline;
 }
 .section1 {
   /* background-color: aquamarine; */
   display: flex;
   justify-content: space-between;
   padding: 1vw 4vw;
-  height: calc(100% - 70px);
+  height: calc(100% - 60px);
 }
 
 .section1 .hero {
@@ -335,15 +338,22 @@ footer .icons {
   nav .nav2 a button {
     font-size: 2rem;
   }
-  nav .nav2 a button:hover{
-    background-color: #1A1A40;
-  }
+
 
   nav .nav2 i {
     display: inline;
     margin-right: 0.4rem;
     color: rgb(255, 255, 255);
   }
+  .nav2>a i{
+    color: black;
+  }
+  nav .nav2 a button:hover{
+    background-color: #1A1A40;
+    color: rgb(255, 255, 255);
+  }
+ 
+
   nav  i {
     display: inline;
     font-size: 2.2rem;

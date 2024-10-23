@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Roboto", serif;
+  background-color: #ffebcd;
+  overflow-x: hidden;
+  padding-top: 60px;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav {
+  background-color: #1a1a40;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 4vw;
+}
+
+nav .logo h1 {
+  font-weight: 900;
+  font-size: 2.4rem;
+  color: #ffebcd;
+  text-decoration: underline;
+}
+
+nav .nav2 {
+  display: flex;
+  gap: 1.2vw;
+  align-items: center;
+}
+
+nav .nav2 a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav .nav2 a:hover {
+  color: #f2f2f275;
+}
+nav .nav2 a button {
+  padding: 0.6vw 1.8vw;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 40px;
+  color: black;
+  border: 2px solid white;
+  background-color: #ffebcd;
+}
+nav .nav2 a button:hover {
+  cursor: pointer;
+  background-color: #222d46;
+  color: white;
+}
+nav i {
+  display: none;
+}
+.nav2 > a i {
+  display: inline;
+}
+
+/* main */
+
+/* setting up height and width of main section */
+main {
+  /* background-color: #0dc73c; */
+  width: 100%;
+  height: calc(100% - 20px);
+  display: flex;
+}
+
+section {
+  /* background-color: #172e1d; */
+  width: 80%;
+  height: 100%;
+  padding-top: 1rem;
+}
+
+section .mobile {
+  display: none;
+}
+
+section .recentlyViewed h3 {
+  text-align: center;
+}
+section .postCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vw;
+    padding: 2rem 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* card design ___________________________________________*/
+.card {
+  display: flex;
+  flex-direction: column;
+  /* width: 15vw;
+  height: 20vw; */
+  width: 12.5rem;
+  height: 17rem;
+  border: 1px solid gray;
+  border-radius: 2rem;
+  overflow: hidden;
+  gap: 0.15rem;
+  cursor: pointer;
+}
+.card:hover{
+    border-color: black;
+    box-shadow: 4px 4px 2px rgba(128, 128, 128, 0.678);
+    color: rgba(0, 0, 0, 0.747);
+}
+.card .image {
+  height: 50%;
+}
+.card .text{
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem 0.8rem ;
+    height: 100%;
+}
+.card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.card h2 {
+  font-weight: bold;
+}
+.card p {
+  font-size: 0.7rem;
+  height: 46%;
+  overflow: hidden;
+}
+.card .cardBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .cardBottom .iconName {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+}
+.card .cardBottom i {
+    font-size: 2rem;
+  }
+  .card .cardBottom button{
+   border-radius: 0.4rem;
+   padding: 0.03rem 0.5rem;
+   background-color: transparent;
+   border: 0.5px solid gray;
+  }
+  .card .cardBottom button:hover{
+    cursor: pointer;
+  }
+  _________________________________________
+
+
+
+  section .allUpdates h3 {
+    text-align: center;
+    background-color: #1a1a40;
+}
+#update {
+    text-align: center;
+    /* background-color: #fff; */
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-decoration: underline;
+  }
+
+/* aside */
+
+aside {
+  /* background-color: aqua; */
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding-left: 2vw;
+  position: fixed;
+  right: 0;
+}
+.search h2 {
+}
+.search input {
+  border-radius: 2rem;
+  padding: 0.2rem 1rem;
+  width: 70%;
+}
+.search i {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.category .categoriesList {
+  /* width: 60%; */
+}
+.category .categoriesList ul {
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 0.2rem;
+}
+
+.categoriesList li {
+  list-style: none;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0rem 0.3rem;
+}
+.categoriesList li:hover {
+  cursor: pointer;
+}
+
+/* Footer Section */
+footer {
+  position: fixed;
+  width: 100%;
+  height: 20px;
+  bottom: 0;
+  /* padding: 2vw 0vw 0vw 2vw; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.2vw;
+  align-items: center;
+  background-color: #1a1a40;
+  color: #f2f2f2;
+}
+
+footer .icons i {
+  font-size: 36px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer .icons i:hover {
+  color: rgb(77, 71, 71);
+}
+
+footer .icons {
+  display: flex;
+  gap: 0.5vw;
+}
+
+/* //mobile */
+@media screen and (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
+  nav .nav2 {
+    background-color: #1a1a40;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+    padding-top: 10vw;
+    gap: 7vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+  }
+
+  .navIcons {
+    display: flex;
+    gap: 0.5vw;
+  }
+  .navIcons i:hover {
+    color: rgb(77, 71, 71);
+  }
+
+  #open:hover {
+    cursor: pointer;
+    color: gray;
+  }
+  #close {
+    font-size: 3rem;
+    position: absolute;
+    top: 1.5vw;
+    right: 3vw;
+  }
+  #close:hover {
+    color: gray;
+    cursor: pointer;
+  }
+
+  nav .nav2 a {
+    display: flex;
+    font-size: 2rem;
+  }
+  nav .nav2 a button {
+    font-size: 2rem;
+  }
+
+  nav .nav2 i {
+    display: inline;
+    margin-right: 0.4rem;
+    color: rgb(255, 255, 255);
+  }
+  .nav2 > a i {
+    color: black;
+  }
+  nav .nav2 a button:hover {
+    background-color: #1a1a40;
+    color: rgb(255, 255, 255);
+  }
+
+  nav i {
+    display: inline;
+    font-size: 2.2rem;
+    margin-right: 0.4rem;
+    color: white;
+  }
+  section {
+    width: 100%;
+  }
+  section .mobile {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  section .category .categoriesList {
+    display: none;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .card{
+    width: 18rem;
+    height: 26rem;
+  }
+  .card .text{
+    justify-content: center;
+  }
+}
