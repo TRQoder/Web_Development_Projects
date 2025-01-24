@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f7fb;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+    /* Prevent body overflow */
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    max-height: 90vh;
+    /* Ensure the container doesn't exceed 90% of the viewport height */
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    overflow-y: auto;
+    /* Makes the container scrollable */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-right: auto;
+}
+
+#modeSwitch {
+    cursor: pointer;
+    margin-left: auto;
+    font-size: 1.6rem;
+}
+
+.input {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background-color: #f1f3f6;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+}
+
+#inputText {
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    color: #333;
+}
+
+#add {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+#add:hover {
+    background-color: #218838;
+}
+
+.listContainer {
+    list-style: none;
+    margin-top: 1.5rem;
+    padding: 0;
+    overflow-y: auto;
+    /* Ensures the list also scrolls if it exceeds container height */
+}
+
+.listContainer li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+.listContainer li.checked {
+    background-color: #e2e2e2;
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.icons {
+    display: flex;
+    gap: 0.75rem;
+    position: absolute;
+    right: 1rem;
+}
+
+.icons i {
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.icons i:hover {
+    color: #28a745;
+}
+
+/* Light mode styles */
+body {
+    background-color: #f4f7fb;
+}
+
+.container {
+    background-color: white;
+}
+
+.listContainer li {
+    background-color: #f9f9f9;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+
+}
+
+body.dark-mode .container {
+    background-color: #1f1f1f;
+
+}
+
+body.dark-mode header {
+    color: white;
+}
+
+body.dark-mode h1 {
+    color: white;
+}
+
+body.dark-mode .listContainer li {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode .listContainer li.checked {
+    background-color: #33333359;
+    color: #ffffff54;
+}
+
+
+body.dark-mode .input {
+    background-color: #333333;
+}
+
+body.dark-mode #inputText {
+    background-color: #333333;
+    color: white;
+
+}
+
+body.dark-mode #add {
+    background-color: #28a745;
+    color: white;
+}
+
+body.dark-mode .icons i {
+    color: white;
+}
+body.dark-mode .listContainer li.checked .icons i{
+    color: #ffffff45;
+
+}
+
+body.dark-mode .checked {
+    color: gray;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        flex-grow: 1;
+    }
+
+    #modeSwitch {
+        margin-left: auto;
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .input {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+
+    #inputText {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .listContainer li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .icons {
+        flex-direction: row;
+        gap: 0.5rem;
+        justify-content: flex-start;
+    }
+}
