@@ -1,2 +1,2 @@
 # Web_Development_Projects
-Learining web development through Projects
+Learning web development through Projects
